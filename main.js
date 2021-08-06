@@ -76,6 +76,8 @@ function addEntry(date, confidence, reflection)
 
       // Call your logJournalEntries function to log all entries in the array to the console
 }
+
+// added a button function
 document.getElementById("add").onclick = function() {myFunction()};
 
 function myFunction() {
