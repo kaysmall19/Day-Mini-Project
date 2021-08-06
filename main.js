@@ -15,22 +15,22 @@ let confidence = prompt("Please enter your confidence level.");
 let text2;
 if (confidence == null || confidence == "Great, Okay, Ugh") 
 {
-  text = "User cancelled the confidence level.";
+  text2 = "User cancelled the confidence level.";
 } 
 else
 {
-  text = confidence ;
+  text2 = confidence ;
 }
 // prompt the user for a reflection
 let reflection = prompt("Please enter your reflection on today.");
 let text3;
 if (reflection == null || reflection == "") 
 {
-  text = "User cancelled the reflection";
+  text3 = "User cancelled the reflection";
 } 
 else 
 {
-  text = reflection ;
+  text3 = reflection ;
 }
 // add an array for the prompts
 const journal_entry = []
@@ -75,11 +75,4 @@ function addEntry(date, confidence, reflection)
       // Add the entry to the Array and to the DOM 
 
       // Call your logJournalEntries function to log all entries in the array to the console
-}
-
-// added a button function
-document.getElementById("add").onclick = function() {myFunction()};
-
-function myFunction() {
-  document.getElementById("add").innerHTML = "ADD TEXT!";
 }
