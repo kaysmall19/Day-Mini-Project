@@ -5,36 +5,49 @@ let text;
 if (date == null || date == "") 
 {
   text = "User cancelled the date.";
-} else {
+} 
+else 
+{
   text = date ;
 }
 // prompt the user for a confidence level
 let confidence = prompt("Please enter your confidence level.");
-let text;
+let text2;
 if (confidence == null || confidence == "Great, Okay, Ugh") 
 {
   text = "User cancelled the confidence level.";
-} else {
+} 
+else
+{
   text = confidence ;
 }
 // prompt the user for a reflection
 let reflection = prompt("Please enter your reflection on today.");
-let text;
+let text3;
 if (reflection == null || reflection == "") 
 {
   text = "User cancelled the reflection";
-} else {
+} 
+else 
+{
   text = reflection ;
 }
 // add an array for the prompts
-const journal_entry = [
-    "date",
-    "confidence",
-    "relfection"
-  ];
+const journal_entry = []
+console.log (date, confidence, reflection)
+
 //number two
 //create an object for the journal entry
-
+let entry = 
+{
+    date: "",
+    confidence: "",
+    reflection: "",
+    journalEntry: function() 
+    {
+      return this.date + " " + this.confidence + " " + this.reflection;
+    }
+}
 //number three
 //
 
@@ -47,19 +60,19 @@ const journal_entry = [
 //create a function to iterate arrays
 
 //number six
-//create a while loop to continue the letting the user add journals until the enter quit.
+//create a while loop to continue the letting the user add journals until they enter quit.
 //example
-// function addJournalEntry(date, entry, confidence)
-// {
-//       // Create a new journal object
-//       let newEntry = 
-//       {
-//         creation_date: date, 
-//         journal_entry: entry,
-//         confidence_level: confidence              
-//       }
+function addEntry(date, confidence, reflection)
+{
+      // Create a new journal object
+      let newEntry = 
+      {
+        creation_date: date, 
+        confidence_level: confidence,
+        reflection: entry              
+      }
 
-//       // Add the entry to the Array and to the DOM 
+      // Add the entry to the Array and to the DOM 
 
-//       // Call your logJournalEntries function to log all entries in the array to the console
-// }
+      // Call your logJournalEntries function to log all entries in the array to the console
+}
